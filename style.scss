@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d64161;
+}
+#root {
+p, 
+h1 {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+transform-origin: 0% 0%;
+font-family: 'Caveat', cursive;
+font-size: 48px;
+color: #feb236;
+}
+
+p {
+    font-weight: 400;
+    
+}
+h1 {
+    font-weight: 700;
+   
+}
+&.clicked {
+h1 {
+    animation: right 4s infinite reverse;
+}
+p {
+    animation: right 4s infinite;
+}
+@keyframes right {
+    0% {
+        transform: rotate(0) translate(-50%, -50%);
+        
+    }
+        100% {
+            transform: rotate(360deg) translate(-50%, -50%);
+        }
+    }
+}
+}
